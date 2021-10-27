@@ -54,18 +54,44 @@
 // High Order CallBack
 
 
-function genap(num) {
+// function genap(num) {
 
-    return num%2 == 0
-}
+//     return num%2 == 0
+// }
 
-function cetak (num, callback) {
+// function cetak (num, callback) {
+//     const benar = callback(num)
+//     if (benar) {
+//         console.log(`${num} adalah bilangan genap`)
+//     } else {
+//         console.log(`${num} bilangan genap`)
+//     }
+// }
+
+// cetak(12, genap)
+
+//high order dan callback annonymouse
+
+// function cetak(num, callback) {
+//     const benar = callback(num)
+//     if(benar) {
+//         console.log(`${num} genap`)
+//     } else {
+//         console.log(`${num} ganjil`)
+//     }
+// }
+
+// cetak(8, function(angka) {
+//     return angka % 2 == 0
+// })
+
+function cetak(num, callback) {
     const benar = callback(num)
-    if (benar) {
-        console.log(`${num} adalah bilangan genap`)
+    if(benar) {
+        console.log(`${num} genap`)
     } else {
-        console.log(`${num} bilangan genap`)
+        console.log(`${num} ganjil`)
     }
 }
 
-cetak(12, genap)
+cetak(17, (angka => angka%2 == 0))
