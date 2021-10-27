@@ -85,13 +85,13 @@
 //     return angka % 2 == 0
 // })
 
-function cetak(num, callback) {
-    const benar = callback(num)
-    if(benar) {
-        console.log(`${num} genap`)
-    } else {
-        console.log(`${num} ganjil`)
-    }
-}
+// function cetak(num, callback) {
+//     const benar = callback(num)
+//     if(benar) {
+//         console.log(`${num} genap`)
+//     } else {
+//         console.log(`${num} ganjil`)
+//     }
+// }
 
-cetak(17, (angka => angka%2 == 0))
+// cetak(17, (angka => angka%2 == 0))
